@@ -1,0 +1,446 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    padding: 0 7.4%;
+    background-color: #202020;
+    font-family: "Poppins", sans-serif;
+    height: auto;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.navigation {
+    transition: 0.5s ease-in-out;
+}
+
+.logo span {
+    color: orangered;
+    font-style: italic;
+    padding: 5px;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1.3rem;
+    transition: color 0.7s ease;
+    cursor: pointer;
+}
+
+.navigation a:hover {
+    color: #ff0000;
+}
+
+.hamburgerMenu {
+    display: none;
+    color: #ffffff;
+    transition: color 0.7s ease;
+    cursor: pointer;
+}
+
+.hamburgerMenu:hover {
+    color: #ff0000;
+}
+
+#contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 150px;
+}
+
+#contentContainer span {
+    color: #ff0000;
+}
+
+#contentContainer h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#contentContainer p {
+    font-size: 1.5rem;
+}
+
+#contentContainer button {
+    padding: 20px 30px;
+    font-size: 1.4rem;
+    color: #ffffff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.4s ease-in-out;
+    border: solid 2px #ffffff;
+}
+
+#contentContainer button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#blog {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+}
+
+.blogContainer1 {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.blogContainer2 {
+    margin-top: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.blogTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    flex-wrap: wrap;
+}
+
+.blogTitle h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.line {
+    background-color: #ff0000;
+    height: 5px;
+    width: auto;
+}
+
+.lineBottom {
+    background-color: blue;
+    height: 5px;
+    width: auto;
+}
+
+.lineBottom2 {
+    background-color: blue;
+    height: 5px;
+    width: auto;
+}
+
+.blogPicture {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.blogPicture img {
+    width: 20%;
+}
+
+.blogContent p {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.blogContainer2 {
+    background-color: #fff;
+    border-radius: 10px;
+    height: auto;
+}
+
+.blogPicture2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.blogPicture2 img {
+    width: 20%;
+    height: 20%;
+}
+
+.blogTitle2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    flex-wrap: wrap;
+}
+
+.line2 {
+    background-color: #ff0000;
+    height: 5px;
+    width: auto;
+}
+
+.blogContent2 p {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#commentForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    gap: 6px;
+    font-family: "Poppins", sans-serif;
+}
+
+#commentForm2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    gap: 6px;
+    font-family: "Poppins", sans-serif;
+}
+
+#nama {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: solid 2px #000000;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+#nama2 {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: solid 2px #000000;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+textarea {
+    width: auto;
+    height: 30px;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 10px;
+    border: solid 2px #000000;
+    font-family: "Poppins", sans-serif;
+}
+
+#nama::placeholder {
+    color: #ffffff;
+}
+
+#nama2::placeholder {
+    color: #ffffff;
+}
+
+textarea::placeholder {
+    color: #ffffff;
+}
+
+#commentForm button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #ff0000;
+    border: solid 2px #000000;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+#commentForm2 button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #ff0000;
+    border: solid 2px #000000;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#commentForm button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #ffffff;
+    cursor: pointer;
+}
+
+#commentForm2 button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #ffffff;
+    cursor: pointer;
+}
+
+.comment1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.comment2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.commentDisplay1, .commentDisplay2 {
+    padding-left: 10px;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageAbout {
+    transform: scale(0.5);
+    border-radius: 50%;
+    margin-right: -50px;
+}
+
+.leftSide {
+    color: #ffffff;
+}
+
+.leftSide h2 {
+    font-size: 3rem;
+}
+
+.leftSide p {
+    font-size: 1.4rem;
+}
+
+.leftSide button {
+    padding: 17px 25px;
+    border-radius: 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leftSide button:hover {
+    background-color: transparent;
+}
+
+
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Awal elemen sedikit turun */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0); /* Saat animasi berjalan, elemen berada pada posisi normal */
+}
+
+/* Contoh animasi tambahan untuk elemen yang lebih spesifik */
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-20px); /* Awal elemen sedikit ke kiri */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in-left.show {
+    opacity: 1;
+    transform: translateX(0); /* Saat animasi berjalan, elemen berada pada posisi normal */
+}
+
+.fade-in-left-lazy {
+    opacity: 0;
+    transform: translateX(-20px); /* Awal elemen sedikit ke kiri */
+    transition: opacity 1.8s ease-out, transform 1.8s ease-out;
+}
+
+.fade-in-left-lazy.show {
+    opacity: 1;
+    transform: translateX(0); /* Saat animasi berjalan, elemen berada pada posisi normal */
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(20px); /* Awal elemen sedikit ke kanan */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in-right.show {
+    opacity: 1;
+    transform: translateX(0); /* Saat animasi berjalan, elemen berada pada posisi normal */
+}
+
+
+
+/* MEDIA QUERIES UNTUK RESPONSIF */
+
+@media (max-width: 1000px) {
+    .hamburgerMenu {
+        display: block;
+    }
+    .navigation {
+            display: flex;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+            background-color: #ff0000;
+            border-style: solid 5px;
+            border-color: #ffffff;
+            border-radius: 10px;
+            z-index: 15;
+        }
+    #about {
+        flex-direction: column;
+    }
+    .comment, .comment2 {
+        margin-top: 10px;
+    }
+}

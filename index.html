@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Faldin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style-backend/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>FALDIN<span>AKBAR</span>IMANI</h1>
+        </div>
+        <div class="navigation" id="navigation">
+            <a href="body">Home</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About Us!</a>
+        </div>
+        <div class="hamburgerMenu">
+            <i data-feather="menu" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    <section id="contentContainer" class="fade-in">
+        <h1>FALDIN AKBAR<br>IMANI</h1>
+        <p>Ini adalah web blog <span>sederhana</span> saya untuk tugas<br>Informatika kelas IX-H Pak Sugianto.</p>
+        <a href="#blog"><button>Lihat Blog Saya!</button></a>
+    </section>
+    <section id="blog">
+        <div class="blogContainer1 fade-in-left">
+            <div class="blogTitle">
+                <h1>Mendaki Gunung Klotok Kediri</h1>
+            </div>
+            <div class="line">
+            </div>
+            <div class="blogPicture">
+                <img src="assets/IMG20240824091154.jpg" class="picture1">
+                <img src="assets/IMG20240824084819.jpg" class="picture2">
+                <img src="assets/IMG20240824091216.jpg" class="picture3">
+            </div>
+            <div class="blogContent">
+                <p>ㅤㅤMendaki gunung klotok yang memiliki ketinggian 536mdpl kami mulai dari jam 7. Dan saya tidak
+                    sendirian saya bersama teman saya yaitu Syauqi dari kelas IX-J. Kami memang sudah merencanakan
+                    keguatan ini jauh hari sebelum mendaki.<br>
+
+                    ㅤㅤPendakian diawali dengan jalan yang menanjak sekitar 40 derajat kemiringan. Dan kami masuk ke
+                    bagian candi klotok. Sebelum ke candi klotok kami disuguhkan pemandangan Kota Kediri dari jalur
+                    pendakian. Lalu kami beristirahat karena capek dengan jalan yang menanjak terus. Kami istirahat
+                    hanya sekitar 3 menit saja. Lalu kami melanjutkan perjalanan hingga Sumber Lho, yaitu sumber mata
+                    air yang berada di Gunung Klotok. Lalu kami melanjutkan perjalanan dengan jalan yang landai
+                    sebentar, lalu menanjak dengan medan berbatu, licin, dan sempit, jadi ketelitian dan kehati-hatian
+                    perlu diterapkan pada saat mendaki.<br>
+
+                    ㅤㅤSaat mendaki kami berpapasan dengan banyak orang mulai dari anak kecil, remaja seumuran kita, dan
+                    orang tua yang masih semangat untuk mendaki. Dan akhirnya kita disuguhkan jalan yang sangat curam
+                    dengan trek tanah tetapi licin, kemiringan kira kira hampir 70 derajat dan kami harus berjalan
+                    sambil berpegang tali dan bambu. Setelah itu pada sekitar jam 8 hampir 9 kita telah sampai di Puncak
+                    Watu Bengkah yang digunakan untuk pengibaran bendera pada setiap 17 Agustus. Rasanya sangat bangga
+                    melewati jalan yang melelahkan meskipun hanya 536mdpl pemandangan Kota Kediri di atas sangat
+                    terlihat bagus.</p>
+            </div>
+            <div class="lineBottom"></div>
+            <h2 class="comment1">Kolom Komentar</h2>
+            <div class="commentDisplay1" id="commentDisplay1"></div>
+        </div>
+        <div class="comment">
+            <form id="commentForm">
+                <input type="text" name="Nama" id="nama" required placeholder="Nama">
+                <br>
+                <textarea id="komentar" required placeholder="Komentar" rows="10" cols="30"></textarea>
+                <br>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+        <div class="blogContainer2 fade-in-right">
+            <div class="blogTitle2">
+                <h1>Membuat Proyek IoT Untuk Saklar Lampu</h1>
+            </div>
+            <div class="line2">
+            </div>
+            <div class="blogPicture2">
+                <img src="assets/blog2.jpg">
+                <img src="assets/blog2__1.jpg">
+            </div>
+            <div class="blogContent2">
+                <p>ㅤㅤDalam era teknologi yang terus berkembang, Internet of Things (IoT) menawarkan berbagai solusi
+                    untuk membuat perangkat rumah tangga lebih cerdas dan terhubung. Salah satu proyek IoT yang
+                    sederhana namun bermanfaat adalah mengontrol saklar lampu menggunakan modul ESP8266 dan relay 5V.
+                    ESP8266 adalah mikrokontroler berbasis Wi-Fi yang memungkinkan perangkat untuk terhubung ke
+                    internet, sementara relay 5V berfungsi untuk mengendalikan aliran listrik pada saklar lampu.
+                    Kombinasi keduanya memungkinkan pengguna untuk menghidupkan atau mematikan lampu dari jarak jauh
+                    melalui jaringan Wi-Fi.<br>
+
+                    ㅤㅤUntuk memulai proyek ini, pertama-tama, Anda perlu menyiapkan ESP8266 dan relay 5V. ESP8266 akan
+                    bertindak sebagai otak dari proyek ini, yang akan diprogram menggunakan Arduino IDE untuk
+                    menghubungkan ke jaringan Wi-Fi dan menerima perintah. Relay 5V, yang berfungsi sebagai saklar
+                    elektronik, akan dipasang untuk mengendalikan aliran listrik ke lampu. Pastikan untuk menyambungkan
+                    kabel dengan benar: ESP8266 ke relay dan relay ke sumber listrik lampu. Konfigurasi ini memungkinkan
+                    ESP8266 untuk mengendalikan relay, yang pada gilirannya menghidupkan atau mematikan lampu.<br>
+
+                    ㅤㅤSetelah perangkat keras terpasang, langkah berikutnya adalah memprogram ESP8266 untuk
+                    menghubungkan ke Wi-Fi dan menerima perintah melalui aplikasi web atau aplikasi kontrol IoT lainnya.
+                    Dengan mengembangkan antarmuka pengguna yang sederhana, Anda dapat mengendalikan lampu dari
+                    perangkat apa pun yang terhubung ke internet. Proyek ini tidak hanya memberikan pengalaman belajar
+                    yang berharga dalam dunia IoT tetapi juga meningkatkan kenyamanan dan efisiensi rumah Anda. Dengan
+                    kemampuan ini, Anda dapat mematikan lampu secara otomatis saat tidak diperlukan atau menghidupkannya
+                    sebelum Anda pulang ke rumah, meningkatkan pengalaman sehari-hari dengan teknologi yang cerdas.
+                </p>
+            </div>
+            <div class="lineBottom2"></div>
+            <h2 class="comment2">Kolom Komentar</h2>
+            <div class="commentDisplay2" id="commentDisplay2"></div>
+        </div>
+        <div class="comment2">
+            <form id="commentForm2">
+                <input type="text" name="Nama" id="nama2" required placeholder="Nama">
+                <br>
+                <textarea id="komentar2" required placeholder="Komentar" rows="10" cols="30"></textarea>
+                <br>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about">
+            <div class="leftSide fade-in-left">
+                <h2>About Me!</h2>
+                <p>Saya adalah siswa atau murid dari MTsN 8 Kediri.<br>
+                    Dan saya duduk di kelas IX-H serta menjadi sekretaris pada kelas tersebut.<br>
+                    Saat ini saya sedang menekuni atau belajar tentang programming<br>
+                    terutama pada pemrograman web bagian Front End.</p>
+                    <a href="https://www.instagram.com/faldinakbar_i/"><button>Follow Me On Instagram!</button></a>
+            </div>
+            <div class="rightSide fade-in-right">
+                <img class="imageAbout" src="assets/IMG_20240904_173805.jpg">
+            </div>
+    </section>
+
+
+
+    <script src="style-backend/script.js" type="text/javascript"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
